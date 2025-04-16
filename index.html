@@ -65,8 +65,8 @@
                 <div class="box-img">
                     <img src="image/2.jpg" alt="">
                 </div>
-                <h2>Cheese Burger</h2>
-               <br>
+                <h2>Classic Cheese Burger</h2>
+                <br>
                 <span>Rs 99</span>
                 <i class='bx bx-cart-alt'></i>
             </div>
@@ -75,7 +75,7 @@
                 <div class="box-img">
                     <img src="image/3.jpg" alt="">
                 </div>
-                <h2>Jumbo Burger</h2>
+                <h2>Double Jumbo Burger</h2>
                 <br>
                 <span>Rs 149</span>
                 <i class='bx bx-cart-alt'></i>
@@ -85,9 +85,39 @@
                 <div class="box-img">
                     <img src="image/4.jpg" alt="">
                 </div>
-                <h2>Mexican Burger</h2>
+                <h2>Spicy Mexican Burger</h2>
                 <br>
                 <span>Rs 119</span>
+                <i class='bx bx-cart-alt'></i>
+            </div>
+            <!-- Box 4 -->
+            <div class="box">
+                <div class="box-img">
+                    <img src="https://images.unsplash.com/photo-1585238341267-1cfec2046a55" alt="Veg Supreme Burger">
+                </div>
+                <h2>Veg Supreme Burger</h2>
+                <br>
+                <span>Rs 89</span>
+                <i class='bx bx-cart-alt'></i>
+            </div>
+            <!-- Box 5 -->
+            <div class="box">
+                <div class="box-img">
+                    <img src="https://images.unsplash.com/photo-1606755962773-d324e0a13086" alt="Crispy Chicken Burger">
+                </div>
+                <h2>Crispy Chicken Burger</h2>
+                <br>
+                <span>Rs 129</span>
+                <i class='bx bx-cart-alt'></i>
+            </div>
+            <!-- Box 6 -->
+            <div class="box">
+                <div class="box-img">
+                    <img src="https://images.unsplash.com/photo-1603064752734-4c48eff53d05" alt="Paneer Tikka Burger">
+                </div>
+                <h2>Paneer Tikka Burger</h2>
+                <br>
+                <span>Rs 109</span>
                 <i class='bx bx-cart-alt'></i>
             </div>
         </div>
@@ -131,8 +161,27 @@
         <a href="#" class="btn">Contact Us</a>
     </section>
 
-   
+    <!-- Chat Widget -->
+    <div class="chat-button" onclick="toggleChat()">
+        <i class='bx bx-message-dots'></i>
+    </div>
+    
+    <div class="chat-widget" id="chatWidget">
+        <div class="chat-header">
+            Burger Toons Assistant
+            <span class="close-chat" onclick="toggleChat()">
+                <i class='bx bx-x'></i>
+            </span>
+        </div>
+        <div class="chat-messages" id="chatMessages"></div>
+        <div class="chat-input-container">
+            <input type="text" class="chat-input" id="chatInput" placeholder="Type your message..." onkeypress="handleKeyPress(event)">
+        </div>
+    </div>
+
     <!-- Link To JavaScript -->
+    <link rel="stylesheet" href="chat.css">
+    <script src="chat.js"></script>
     <script src="script.js"></script>
 </body>
 </html>
